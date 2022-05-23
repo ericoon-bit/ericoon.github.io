@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ericoon&#39;s Blog</title>
+    <link>https://blog.ericoon.com/</link>
+    <description>Recent content on Ericoon&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Athul</copyright>
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ericoon.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为React项目本地服务设置HTTPS</title>
+      <link>https://blog.ericoon.com/posts/react-https/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ericoon.com/posts/react-https/</guid>
+      <description>为React本地设置HTTPS  由于没有其他电脑，所以此教程在macOS中演示
+在项目package.json中添加HTTPS
+ “script”: { “start”: “HTTPS=true react-scripts start”, “build”: “react-scripts build”, “test”: “react-scripts test”, “eject”: “react-scripts eject”, }, 在此步骤之后运行yarn start或者npm start将在浏览器中显示此屏幕：
+在此阶段，已经使用了https. 但是没有有效的证书，因此连接被认为是不安全的。
+创建 SSL 证书 获得证书的最简单方法就是通过 mkcert .
+# 安装 mkcert 工具 brew install mkcert # 设置 mkcert mkcert -install  如果使用 Firefox 浏览器，需要单独安装 nss brew install nss
+ 完成以上操作后，就可以为 React 项目生成证书了。
+# 在项目根目录下创建一个 .cert 文件夹 mkdir -p .cert # 在项目根目录下生成证书 mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem &amp;#34;localhost&amp;#34; 此时就可以看到根目录下创建好的新证书。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://blog.ericoon.com/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ericoon.com/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.ericoon.com/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ericoon.com/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
