@@ -1,0 +1,47 @@
+staticDir = ['static']
+baseURL = "https://example.com"
+languageCode = "zh-cn"
+title = "Ericoon's Blog"
+theme="archie"
+copyright = "© Athul"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+[params]
+	mode="auto"
+	useCDN=false
+	subtitle = "热衷技术，崇尚科技！"
+
+# [[params.social]]
+# name = "GitHub"
+# icon = "github"
+# url = "https://github.com/athul/archie"
+# 
+# [[params.social]]
+# name = "Twitter"
+# icon = "twitter"
+# url = "https://github.com/athulcajay/"
+# 
+# [[params.social]]
+# name = "GitLab"
+# icon = "gitlab"
+# url = "https://gitlab.com/athul/"
+[[menu.main]]
+name = "首页🏠"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "所有文章📄"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "关于👨‍💻"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "标签🏷️"
+url = "/tags"
+weight = 4
